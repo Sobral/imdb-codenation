@@ -14,12 +14,16 @@ html, body {
 
 header {
 	margin: 20px 340px;
+	height: 85vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 header nav {
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 
 header nav img#logo{
@@ -58,4 +62,16 @@ header nav span strong {
 	font-size: 1.3em;
 	font-weight: bold;
 	margin-left: 20px;
+}
+
+header div h1 {
+	font-size: 6.5em;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin: 0;
+}
+
+header div ul {
+	list-style-type: none;
+	display: flex;
 }
