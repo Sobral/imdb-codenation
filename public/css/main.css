@@ -1,77 +1,81 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-html, body {
+html, body, .container, ul, li, div, header, nav, img, a, span {
 	box-sizing: border-box;
-	margin: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	
 	padding: 0;
-	font-family: Montserrat;
+	margin: 0;
+
 	color: white;
-	background-image: url(/public/img/capa-madmax2.jpg);
+	font-family: 'Montserrat', sans-serif;
 	font-size: 10px;
 }
 
+body {
+	background-image: url(/public/img/capa-madmax2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 
-header {
-	margin: 20px 340px;
-	height: 85vh;
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+div.container header {
+
+	width: 100%;
+	height: 90vh;
+	padding: 20px;	
+}
+
+div.container header nav {
 	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
 }
 
-header nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-header nav img#logo{
+div.container header nav img {
 	width: 110px;
 	height: 45px;
 }
 
-header nav ul {
-	list-style-type: none;
-	display: flex;
-}
-
-header nav ul li {
-	margin:0 25px;
-}
-
-header nav ul li a {
-	text-decoration: none;
-	color: white;
-	font-size: 1.3em;
-	font-weight: bold;
-}
-
-header nav span {
+div.container header nav ul {
 	display: flex;
 	align-items: center;
 }
 
-header nav span img {
+div.container header nav ul li {
+	margin: 0 25px;
+}
+div.container header nav ul li a {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+div.container header nav span{
+	display: flex;
+	align-items: center;
+}
+
+div.container header nav span img {
 	width: 45px;
 	height: 45px;
 	border-radius: 50%;
 }
 
-header nav span strong {
-	font-size: 1.3em;
-	font-weight: bold;
+div.container header nav span strong {
+	font-size: 1.5em;
 	margin-left: 20px;
-}
-
-header div h1 {
-	font-size: 6.5em;
-	font-weight: bold;
-	line-height: 1.2em;
-	margin: 0;
-}
-
-header div ul {
-	list-style-type: none;
-	display: flex;
 }
